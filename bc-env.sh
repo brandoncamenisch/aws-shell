@@ -17,3 +17,11 @@ function install_brew() {
   sudo yum groupinstall 'Development Tools'
   brew install asdf
 }
+
+
+sudo yum install gcc openssl-devel bzip2-devel libffi-devel
+wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz
+tar xzf Python-3.9.5.tgz
+cd Python-3.9.5
+./configure --enable-optimizations
+sudo make altinstall
